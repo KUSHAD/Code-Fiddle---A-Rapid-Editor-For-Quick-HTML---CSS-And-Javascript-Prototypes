@@ -1,5 +1,5 @@
 {
-  "name": "my-custom-code-editor",
+  "name": "Code-Fiddle",
   "version": "1.0.0",
   "description": "This is a custom html , css and js editor for web made using Reactjs",
   "main": "./src/index.js",
@@ -30,5 +30,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": "https://github.com/KUSHAD/Code-Fiddle---A-Rapid-Editor-For-Quick-HTML---CSS-And-Javascript-Prototypes.git"
 }
