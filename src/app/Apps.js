@@ -16,6 +16,7 @@ class Apps extends Component {
             html: '',
             css: '',
             js: '',
+            theme:'material'
         };
     }
 
@@ -60,15 +61,30 @@ class Apps extends Component {
     render() {
         const { html, js, css } = this.state;
         const codeMirrorOptions = {
-            theme: 'material',
+            theme: this.state.theme,
             lineNumbers: true,
             scrollbarStyle: null,
-            lineWrapping: true,
+            tabSize: 4,
+            indentWithTabs:true,
+            indentUnit:4,
         };
 
         return (
             <div className="App">
-            
+                <header className="header">
+                    < img src = {
+                        require('./favicon.ico')
+                    }
+                    alt="Icon"/> Code Fiddle | A Rapid Editor For HTML , CSS And Javascript Prototypes 
+                    <br />
+                    Mode :- <select value={this.state.theme} onChange={(e)=>this.setState({
+                        theme:e.target.value
+                    })}>
+                    <option value="material">Dark</option>
+                    <option value="default">Light</option>
+                    </select>
+                </header>
+                <hr color="white" />
                 <section className="playground">
                     <div className="code-editor html-code">
                         <div className="editor-header">HTML</div>

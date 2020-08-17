@@ -10,8 +10,17 @@ html {
     padding: 0;
 }
 
+.header{
+    display: block;
+    width: 31.5%;
+    background-color: #65656d;
+    color: #fafafa;
+    text-align: center;
+	font-size: 20px;
+}
+
 .playground {
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
